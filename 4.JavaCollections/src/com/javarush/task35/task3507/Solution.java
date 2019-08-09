@@ -8,9 +8,6 @@ import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.Set;
 
-/* 
-ClassLoader - что это такое?
-*/
 public class Solution {
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         Set<? extends Animal> allAnimals = getAllAnimals(Solution.class.getProtectionDomain().getCodeSource().getLocation().getPath() + Solution.class.getPackage().getName().replaceAll("[.]", "/") + "/data");
